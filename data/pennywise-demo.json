@@ -1,0 +1,129 @@
+{
+  "expenses": [
+    {
+      "_id": "6af6e1388d4af346f700d4ef",
+      "title": "Morning coffee",
+      "amount": 5.75,
+      "category": "Food",
+      "date": "2026-11-12",
+      "note": "Flat white and a pastry",
+      "legacyId": "3",
+      "createdAt": "2026-11-13T10:06:48.524Z"
+    },
+    {
+      "_id": "6af6e1388d4af346f700d4f0",
+      "title": "Metro card",
+      "amount": 24,
+      "category": "Transport",
+      "date": "2026-11-11",
+      "note": "Weekly commute top-up",
+      "legacyId": "4",
+      "createdAt": "2026-11-13T10:06:48.718Z"
+    },
+    {
+      "_id": "6af6e1388d4af346f700d4f1",
+      "title": "Market groceries",
+      "amount": 68.42,
+      "category": "Food",
+      "date": "2026-11-10",
+      "note": "Fresh produce and pantry staples",
+      "legacyId": "5",
+      "createdAt": "2026-11-13T10:06:48.914Z"
+    },
+    {
+      "_id": "6af6e1398d4af346f700d4f2",
+      "title": "Notebook & pens",
+      "amount": 18.9,
+      "category": "Shopping",
+      "date": "2026-11-08",
+      "note": "A few desk essentials",
+      "legacyId": "6",
+      "createdAt": "2026-11-13T10:06:49.118Z"
+    },
+    {
+      "_id": "6af6e1398d4af346f700d4f3",
+      "title": "Electricity bill",
+      "amount": 74.3,
+      "category": "Bills",
+      "date": "2026-11-06",
+      "note": "Monthly utility bill",
+      "legacyId": "7",
+      "createdAt": "2026-11-13T10:06:49.381Z"
+    },
+    {
+      "_id": "6af6e1398d4af346f700d4f4",
+      "title": "Lunch with friends",
+      "amount": 32.5,
+      "category": "Food",
+      "date": "2026-11-04",
+      "note": "Weekend catch-up",
+      "legacyId": "8",
+      "createdAt": "2026-11-13T10:06:49.695Z"
+    },
+    {
+      "_id": "6af6e1398d4af346f700d4f5",
+      "title": "Pharmacy",
+      "amount": 14.25,
+      "category": "Health",
+      "date": "2026-11-02",
+      "note": "Everyday essentials",
+      "legacyId": "9",
+      "createdAt": "2026-11-13T10:06:49.822Z"
+    },
+    {
+      "_id": "6af6e1398d4af346f700d4f6",
+      "title": "Movie night",
+      "amount": 28,
+      "category": "Entertainment",
+      "date": "2026-11-01",
+      "note": "Tickets and snacks",
+      "legacyId": "10",
+      "createdAt": "2026-11-13T10:06:49.976Z"
+    }
+  ],
+  "budgets": [
+    {
+      "_id": "6af6e13a8d4af346f700d4f7",
+      "category": "Food",
+      "month": "2026-11",
+      "amount": 3500,
+      "legacyId": "1"
+    },
+    {
+      "_id": "6af6e13a8d4af346f700d4f8",
+      "category": "Transport",
+      "month": "2026-11",
+      "amount": 1200,
+      "legacyId": "2"
+    },
+    {
+      "_id": "6af6e13a8d4af346f700d4f9",
+      "category": "Shopping",
+      "month": "2026-11",
+      "amount": 5000,
+      "legacyId": "3"
+    },
+    {
+      "_id": "6af6e13a8d4af346f700d4fa",
+      "category": "Bills",
+      "month": "2026-11",
+      "amount": 1800,
+      "legacyId": "4"
+    },
+    {
+      "_id": "6af6e13a8d4af346f700d4fb",
+      "category": "Health",
+      "month": "2026-11",
+      "amount": 1000,
+      "legacyId": "5"
+    },
+    {
+      "_id": "6af6e13b8d4af346f700d4fc",
+      "category": "Entertainment",
+      "month": "2026-11",
+      "amount": 1000,
+      "legacyId": "7"
+    }
+  ],
+  "app_meta": []
+}

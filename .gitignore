@@ -1,0 +1,12 @@
+node_modules/
+dist/
+server/expenses.db
+server/expenses.db-journal
+server/expenses.db-wal
+server/expenses.db-shm
+.env
+.env.*
+!.env.example
+.vercel/
+.vercel
+.env*

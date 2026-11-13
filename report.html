@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pennywise Expense Tracker Report</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 0.7in;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: "Times New Roman", Times, serif;
+        color: #111;
+        background: #fff;
+      }
+      body {
+        font-size: 12pt;
+        line-height: 1.6;
+      }
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        padding: 0.7in;
+        box-sizing: border-box;
+        page-break-after: always;
+      }
+      .page:last-child {
+        page-break-after: auto;
+      }
+      h1, h2, h3 {
+        font-weight: bold;
+        margin: 0 0 12px;
+      }
+      h1 {
+        font-size: 22pt;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      h2 {
+        font-size: 16pt;
+        text-transform: uppercase;
+        margin-top: 20px;
+      }
+      h3 {
+        font-size: 14pt;
+      }
+      .center {
+        text-align: center;
+      }
+      .title-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 220mm;
+        text-align: center;
+      }
+      .title-page h1 {
+        font-size: 28pt;
+        margin-bottom: 20px;
+      }
+      .subtitle {
+        font-size: 14pt;
+        margin: 10px 0;
+      }
+      .dept {
+        font-size: 16pt;
+        margin-top: 20px;
+      }
+      .student { margin-top: 30px; font-size: 14pt; }
+      .guide { margin-top: 30px; font-size: 14pt; }
+      .certificate {
+        margin-top: 30px;
+      }
+      .certificate p {
+        text-align: justify;
+      }
+      .signature-block {
+        margin-top: 40px;
+        line-height: 1.8;
+      }
+      .toc ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .toc li {
+        margin: 6px 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      .section {
+        margin-top: 12px;
+      }
+      .chapter { font-size: 16pt; font-weight: bold; text-transform: uppercase; margin: 30px 0 12px; }
+      .subhead { font-size: 13pt; font-weight: bold; margin-top: 14px; }
+      p {
+        margin: 0 0 10px;
+        text-align: justify;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 12px 0;
+      }
+      th, td {
+        border: 1px solid #222;
+        padding: 6px 8px;
+        text-align: left;
+        vertical-align: top;
+      }
+      ul, ol {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding-left: 24px;
+      }
+      .references {
+        padding-left: 18px;
+      }
+      .references li {
+        margin-bottom: 8px;
+      }
+      .appendix {
+        margin-top: 20px;
+      }
+      .small {
+        font-size: 11pt;
+      }
+      .page-num {
+        text-align: center;
+        margin-top: 16px;
+        font-size: 10pt;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="title-page">
+        <h1>Pennywise Expense Tracker</h1>
+        <div class="subtitle">A Mini Project Report</div>
+        <div class="subtitle">Submitted in partial fulfillment of the requirements for the award of the degree of</div>
+        <div class="subtitle"><strong>Bachelor of Technology / B.E.</strong></div>
+        <div class="dept">Department of Computer Science and Engineering</div>
+        <div class="dept"><strong>[Your College / University Name]</strong></div>
+        <div class="student">Submitted by:<br><strong>Student Name 1</strong><br><strong>Student Name 2</strong></div>
+        <div class="guide">Guide:<br><strong>Dr. / Prof. [Faculty Name]</strong></div>
+      </div>
+    </div>
+
+    <div class="page">
+      <h2>Bonafide Certificate</h2>
+      <div class="certificate">
+        <p>This is to certify that the project work entitled <strong>"PENNYWISE EXPENSE TRACKER"</strong> is a bonafide work carried out by <strong>[Student Name(s)]</strong> in partial fulfillment of the requirements for the award of the degree of <strong>[Course Name]</strong> during the academic year <strong>[Year]</strong>.</p>
+        <p>The project has been completed under my supervision and guidance.</p>
+      </div>
+      <div class="signature-block">
+        <p>Signature of the Guide</p>
+        <p>Name: ...........................................</p>
+        <p>Designation: ......................................</p>
+        <p>Department: ........................................</p>
+        <p>Institution: ......................................</p>
+      </div>
+    </div>
+
+    <div class="page">
+      <h2>Acknowledgement</h2>
+      <p>We would like to express our sincere gratitude to our project guide, faculty members, and the college administration for their continuous support and encouragement throughout this project work. We are thankful for the valuable guidance, constructive suggestions, and motivation that helped us complete the Pennywise Expense Tracker successfully.</p>
+      <p>We would also like to thank our classmates and family members for their support and cooperation during the development and testing of the project.</p>
+    </div>
+
+    <div class="page">
+      <h2>Table of Contents</h2>
+      <div class="toc">
+        <ul>
+          <li><span>1. Introduction</span><span>1</span></li>
+          <li><span>2. Design Flow / Process</span><span>12</span></li>
+          <li><span>3. Results Analysis and Validation</span><span>20</span></li>
+          <li><span>4. Conclusion and Future Work</span><span>28</span></li>
+          <li><span>References</span><span>33</span></li>
+          <li><span>Appendix A: User Manual</span><span>35</span></li>
+          <li><span>Achievements</span><span>39</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page">
+      <h2>Abstract</h2>
+      <p>The <strong>Pennywise Expense Tracker</strong> is a web-based application designed to help individuals manage daily expenses, monitor monthly budgets, and analyze spending behavior. The project provides an interactive dashboard for tracking transactions, creating category-wise budgets, and generating monthly budget reports. The system supports efficient data entry, search and filtering features, and downloadable financial summaries in CSV format.</p>
+      <p>The application was developed using React for the frontend, Express.js for the backend, and MongoDB for persistent data storage. A fallback local JSON storage option was added so the project can run on different machines and in demo environments without requiring a database setup. This makes the system portable for academic demonstrations, team sharing, and deployment in different environments.</p>
+      <p>The project aims to simplify personal budgeting and improve financial awareness by offering a clear view of spending habits and budget utilization. The system is also scalable and can be extended with additional features such as authentication, recurring expenses, and advanced analytics.</p>
+      <p><strong>Keywords:</strong> Expense Tracker, Budget Management, Web Application, React, MongoDB, Personal Finance</p>
+    </div>
+
+    <div class="page">
+      <div class="chapter">Chapter 1: Introduction</div>
+      <div class="subhead">1.1 Background</div>
+      <p>Personal financial management is an essential part of everyday life. Individuals often struggle to track expenses, manage monthly budgets, and understand where their money is being spent. Most users need a simple and efficient tool that can maintain records of spending and highlight budget exceedances.</p>
+      <p>The Pennywise Expense Tracker addresses this need by providing a user-friendly interface for recording expenses, tracking budgets, and analyzing financial activity. By presenting data in a clean dashboard layout, the application enables users to make informed spending decisions.</p>
+
+      <div class="subhead">1.2 Identification of Need</div>
+      <p>Many people use manual notebooks, spreadsheets, or inaccessible applications to track expenses. These methods are often inconvenient and do not provide instant insights into spending patterns. With this project, users can track transactions and categorize them quickly while also assessing how close they are to monthly budget limits.</p>
+
+      <div class="subhead">1.3 Problem Identification</div>
+      <ul>
+        <li>Lack of simple digital expense tracking tools</li>
+        <li>Difficulty in identifying spending trends by category</li>
+        <li>Limited awareness of monthly budget usage</li>
+        <li>Poor accessibility for users needing lightweight finance tools</li>
+      </ul>
+
+      <div class="subhead">1.4 Task Identification</div>
+      <ul>
+        <li>Add and manage expenses</li>
+        <li>Set monthly budgets</li>
+        <li>Filter and search transactions</li>
+        <li>Generate monthly reports</li>
+        <li>Display spending summaries</li>
+        <li>Run in both local and database-backed modes</li>
+      </ul>
+
+      <div class="subhead">1.5 Timeline</div>
+      <table>
+        <tr><th>Phase</th><th>Activity</th><th>Duration</th></tr>
+        <tr><td>Phase 1</td><td>Requirement analysis and planning</td><td>1 week</td></tr>
+        <tr><td>Phase 2</td><td>UI design and architecture</td><td>1 week</td></tr>
+        <tr><td>Phase 3</td><td>Frontend and backend development</td><td>3 weeks</td></tr>
+        <tr><td>Phase 4</td><td>Testing and bug fixing</td><td>1 week</td></tr>
+        <tr><td>Phase 5</td><td>Final report and deployment review</td><td>1 week</td></tr>
+      </table>
+    </div>
+
+    <div class="page">
+      <div class="chapter">Chapter 2: Design Flow / Process</div>
+      <div class="subhead">2.1 Concept Generation</div>
+      <p>The application concept was generated around a personal finance dashboard that is easy to understand and use. The primary goal was to create a system that helps users record expenses quickly and view summaries without needing complex financial software.</p>
+
+      <div class="subhead">2.2 Evaluation and Feature Selection</div>
+      <p>The following features were selected after evaluating the project goals: transaction entry, category-wise spending review, budget management, report generation, search and filter features, and portable deployment support.</p>
+
+      <div class="subhead">2.3 Design Constraints</div>
+      <p>The project considered several constraints, including ease of use, browser compatibility, data validation, and support for demonstration environments without requiring a database connection. The design also prioritizes maintainability and scalability.</p>
+
+      <div class="subhead">2.4 System Design</div>
+      <p>The application follows a modular full-stack architecture with a React frontend, Express.js backend, MongoDB database layer, and JSON fallback storage for portability. This approach allows the app to function smoothly in both development and demo deployment settings.</p>
+
+      <div class="subhead">2.5 Design Flow</div>
+      <ol>
+        <li>User enters a new expense or budget.</li>
+        <li>The frontend sends a request to the backend API.</li>
+        <li>The server validates the data.</li>
+        <li>Data is stored in MongoDB or local fallback storage.</li>
+        <li>The dashboard updates totals and reports.</li>
+      </ol>
+
+      <div class="subhead">2.6 Best Design Selection</div>
+      <p>The selected design was chosen because it balances simplicity, maintainability, and portability. It offers a clean user interface while preserving a scalable backend. The fallback storage feature further improves portability and reduces barriers when sharing the project with teachers and teammates.</p>
+    </div>
+
+    <div class="page">
+      <div class="chapter">Chapter 3: Results Analysis and Validation</div>
+      <div class="subhead">3.1 Implementation</div>
+      <p>The application was implemented using a modular structure. The frontend contains the dashboard, navigation, transaction forms, budget forms, reports, settings, and help pages. The backend contains API handlers for expenses, budgets, and health checks.</p>
+
+      <div class="subhead">3.2 Tools and Technologies Used</div>
+      <ul>
+        <li>React.js</li>
+        <li>Vite</li>
+        <li>Express.js</li>
+        <li>MongoDB</li>
+        <li>Node.js</li>
+        <li>JSON fallback storage</li>
+      </ul>
+
+      <div class="subhead">3.3 Testing and Validation</div>
+      <p>The project was validated for expense creation, budget insertion, invalid input handling, filtering, search, report export, and portable execution without MongoDB. The system successfully demonstrates that financial data can be stored and retrieved reliably in both database-backed and local demo modes.</p>
+
+      <div class="subhead">3.4 Result Analysis</div>
+      <p>The application helps users quickly understand spending patterns across categories. Summary cards provide a snapshot of total monthly expenses, transaction counts, and category breakdowns. The budget section allows users to compare actual spending against planned values, enabling better control of personal finances.</p>
+    </div>
+
+    <div class="page">
+      <div class="chapter">Chapter 4: Conclusion and Future Work</div>
+      <p>The Pennywise Expense Tracker project demonstrates an effective way to manage personal expenses, analyze spending trends, and monitor monthly budgets through an easy-to-use web application. The project integrates modern web technologies and balances simplicity with practical financial functionality.</p>
+      <p>The system is not limited to local-only execution. Additional portability support was added to allow the project to run in shared environments and demonstration setups without strict MongoDB configuration. This is especially useful when a project is shared with teachers, teammates, and evaluators.</p>
+
+      <div class="subhead">Future Scope</div>
+      <ul>
+        <li>User authentication and profile management</li>
+        <li>Recurring expense automation</li>
+        <li>Advanced analytics and charts</li>
+        <li>Monthly and yearly financial insights</li>
+        <li>PDF and Excel export</li>
+        <li>Cloud integration and external finance APIs</li>
+      </ul>
+    </div>
+
+    <div class="page">
+      <h2>References</h2>
+      <ol class="references">
+        <li>MongoDB Documentation. "MongoDB Node.js Driver." MongoDB, 2025.</li>
+        <li>React Documentation. "React - A JavaScript Library for Building User Interfaces." Meta, 2025.</li>
+        <li>Express.js Documentation. "Web Framework for Node.js." Express, 2025.</li>
+        <li>Vite Documentation. "Next Generation Frontend Tooling." Vite, 2025.</li>
+        <li>Patel, R. and Sharma, S. "Personal Finance Tracking Applications: Design and Usability Considerations." International Journal of Computer Applications, 2023.</li>
+      </ol>
+    </div>
+
+    <div class="page">
+      <h2>Appendix A: User Manual</h2>
+      <div class="appendix">
+        <h3>Step 1: Install dependencies</h3>
+        <p><code>npm install</code></p>
+
+        <h3>Step 2: Run the application</h3>
+        <p><code>npm run dev</code></p>
+
+        <h3>Step 3: Open the application</h3>
+        <p>Open the local Vite URL displayed in the terminal, usually <code>http://localhost:5173</code>.</p>
+
+        <h3>Step 4: Use the app</h3>
+        <ul>
+          <li>Add expenses from the dashboard</li>
+          <li>Set monthly budgets</li>
+          <li>Filter by date or category</li>
+          <li>Search transaction details</li>
+          <li>Export monthly reports</li>
+        </ul>
+
+        <h3>Step 5: Optional database configuration</h3>
+        <p>If MongoDB is available, create a <code>.env</code> file from <code>.env.example</code> and add the database connection string. If no database is configured, the application automatically uses the local fallback JSON storage file so the project continues to work.</p>
+      </div>
+    </div>
+
+    <div class="page">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Developed a full-stack expense tracking application</li>
+        <li>Implemented budget monitoring and reporting features</li>
+        <li>Added search, filters, and CSV export</li>
+        <li>Enabled portable deployment by using local fallback storage</li>
+        <li>Created a project structure suitable for sharing with faculty and team members</li>
+      </ul>
+    </div>
+  </body>
+</html>
